@@ -18,7 +18,8 @@ This project is based on a single table:
   * `manager_id` → Manager reference (self-referencing key)
 
 ---
-
+Note: This project uses a small sample dataset for practice and demonstration purposes.
+---
 ## 🔗 Schema Relationship
 
 * Each employee may have a manager
