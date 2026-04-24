@@ -1,72 +1,28 @@
-# 📊 SQL Practice Portfolio
+# 🧪 SQL Practice
 
-## 👋 About
+This folder contains SQL problems categorized by concepts and difficulty.
 
-Aspiring Data Analyst building strong SQL and analytical skills through hands-on practice and real-world problem solving.
+## 📂 Structure
 
----
-
-## 🚀 What This Repository Contains
-
-* Daily SQL practice queries
-* Interview-style problems
-* Real-world data analysis scenarios
+* **Joins/** → Practice problems focused on JOIN operations
+* **Subqueries/** → Problems using scalar and correlated subqueries
+* **Window_Functions/** → Ranking, running totals, and analytical queries
+* **Problems/** → Mixed and real interview-style questions
 
 ---
 
-## 📁 Folder Structure
+## 🎯 Focus
 
-* **employee-manager-analysis** → Advanced SQL case study
-* **sql-joins-practice** → JOIN concepts and problems
-* *(More topics coming: Subqueries, Window Functions, Aggregations)*
-
----
-
-## 🧠 Key Concepts Practiced
-
-* Joins (INNER, LEFT)
-* GROUP BY & HAVING
-* Subqueries
-* Aggregations (COUNT, AVG)
-* Data Analysis Queries
+* Writing clean and optimized queries
+* Exploring multiple approaches to the same problem
+* Strengthening core SQL concepts
 
 ---
 
-## 🔥 Featured Problems
+## 💡 Approach
 
-### 📌 Students with More Than Average Courses
+For many problems, I implemented:
 
-Used subqueries and aggregation to identify students exceeding average enrollments.
-
-### 📌 Course Enrollment Analysis
-
-Analyzed course popularity using GROUP BY and COUNT.
-
-### 📌 Employee-Manager Hierarchy
-
-Solved hierarchical queries using self joins.
-
----
-
-## 📈 Progress
-
-* Practicing SQL daily
-* Moving from basic queries → interview-level problems
-* Building strong analytical thinking
-
----
-
-## 🛠 Tools & Skills
-
-SQL | Python | Pandas | NumPy | Power BI | Excel
-
----
-
-## 🎯 Goal
-
-To become a Data Analyst and solve real business problems using data.
-
----
-
-⭐ If you find this useful, feel free to explore!
-
+* Join-based solutions
+* Subquery-based solutions
+* Window function optimizations
