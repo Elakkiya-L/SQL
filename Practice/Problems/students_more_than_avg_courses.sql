@@ -1,5 +1,5 @@
 -- Problem: Find students enrolled in more than average number of courses
--- Concepts: GROUP BY, HAVING, Subquery, AVG
+-- Concepts: GROUP BY, HAVING, Subquery,join, AVG
 
 select s.name as Students_Name from Students s 
 join Enrollments e 
