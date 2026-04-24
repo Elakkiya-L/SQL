@@ -23,8 +23,6 @@ The project is based on three tables:
 * `Enrollments` acts as a bridge table
 
 ---
-Note: This project uses a small sample dataset for practice and demonstration purposes.
----
 ## 🔍 Key Queries & Analysis
 
 ### 1. Student and Course Mapping
@@ -120,3 +118,4 @@ This project helped strengthen:
 * Solving real-world SQL scenarios
 
 ---
+Note: This project uses a small sample dataset for practice and demonstration purposes.
