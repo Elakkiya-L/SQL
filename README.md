@@ -1,71 +1,49 @@
-# 📊 SQL Practice Portfolio
+# 🧠 SQL Practice & Projects
 
-## 👋 About
+This repository documents my journey of learning and mastering SQL through structured practice and real-world projects.
 
-Aspiring Data Analyst building strong SQL and analytical skills through hands-on practice and real-world problem solving.
+## 📂 Repository Structure
 
----
+### 🔹 Practice
 
-## 🚀 What This Repository Contains
+Focused on solving interview-style SQL problems using:
 
-* Daily SQL practice queries
-* Interview-style problems
-* Real-world data analysis scenarios
-
----
-
-## 📁 Folder Structure
-
-* **employee-manager-analysis** → Advanced SQL case study
-* **sql-joins-practice** → JOIN concepts and problems
-* *(More topics coming: Subqueries, Window Functions, Aggregations)*
-
----
-
-## 🧠 Key Concepts Practiced
-
-* Joins (INNER, LEFT)
-* GROUP BY & HAVING
+* Joins
 * Subqueries
-* Aggregations (COUNT, AVG)
-* Data Analysis Queries
+* Window Functions
+
+### 🔹 Projects
+
+Mini real-world SQL projects with schema design, queries, and insights.
 
 ---
 
-## 🔥 Featured Problems
+## 🚀 Topics Covered
 
-### 📌 Students with More Than Average Courses
-
-Used subqueries and aggregation to identify students exceeding average enrollments.
-
-### 📌 Course Enrollment Analysis
-
-Analyzed course popularity using GROUP BY and COUNT.
-
-### 📌 Employee-Manager Hierarchy
-
-Solved hierarchical queries using self joins.
+* Joins (Inner, Left, Self Join)
+* Subqueries (Correlated & Non-Correlated)
+* Aggregations & Grouping
+* Window Functions (DENSE_RANK, Running Total)
 
 ---
 
-## 📈 Progress
+## 📈 Goals
 
-* Practicing SQL daily
-* Moving from basic queries → interview-level problems
-* Building strong analytical thinking
-
----
-
-## 🛠 Tools & Skills
-
-SQL | Python | Pandas | NumPy | Power BI | Excel
+* Strengthen SQL problem-solving skills
+* Prepare for technical interviews
+* Build a strong SQL portfolio
 
 ---
 
-## 🎯 Goal
+## ⭐ Highlights
 
-To become a Data Analyst and solve real business problems using data.
+* Solved multiple SQL problems using different approaches
+* Implemented both optimized and alternative solutions
+* Built structured SQL projects with insights
 
 ---
 
-⭐ If you find this useful, feel free to explore!
+## 🔗 How to Use
+
+* Navigate to **Practice/** for problem-solving queries
+* Explore **Projects/** for real-world SQL analysis
