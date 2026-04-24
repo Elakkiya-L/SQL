@@ -31,20 +31,20 @@ left join enrollments e on s.id=e.student_id
 group by s.id
 limit 1 ;
 
---5.student(s) enrolled in the maximum number of courses (If 2 students have the same number of enrollments use subquery)
+--6.student(s) enrolled in the maximum number of courses (If 2 students have the same number of enrollments use subquery)
 select s.name as Students_Name ,count(e.course_id)
 from Students s left join Enrollments e on s.id= e.student_id
-group by e.course_id,s.name
+group by s.id,s.name
 having count(e.course_id)=
 						(SElect max(course_count) from (select count(course_id) as course_count from enrollments group by course_id) as cts);
 
---6. students who are enrolled in more than 2 courses
+--7. students who are enrolled in more than 2 courses
 select s.name from Students s 
 left join Enrollments e on s.id=e.student_id
 group by s.name
 having count(e.course_id)>2;
 
--- 7.Students enrolled in more than average number of courses
+-- 8.Students enrolled in more than average number of courses
 -- Concepts: GROUP BY, HAVING, Subquery,join, AVG
 
 select s.name as Students_Name from Students s 
