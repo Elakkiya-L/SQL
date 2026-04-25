@@ -36,3 +36,18 @@ FROM order_counts
 WHERE order_count > (
     SELECT AVG(order_count) FROM order_counts
 );
+
+--Approach3: Join Based Approach with cte
+WITH order_counts AS (
+    SELECT customer_id, COUNT(*) AS order_count
+    FROM Orders
+    GROUP BY customer_id
+),
+avg_table AS (
+    SELECT AVG(order_count) AS avg_count
+    FROM order_counts
+)
+SELECT oc.customer_id
+FROM order_counts oc
+JOIN avg_table a
+ON oc.order_count > a.avg_count;
