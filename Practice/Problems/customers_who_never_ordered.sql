@@ -9,6 +9,9 @@ where c.id not in
               select o.customer_id 
                 from Orders o 
               );
+
+-- Note : Subquery ( Not in )can break with nulls
+
 --Approach2:Left join
 select c.name from customers c
 left join orders o 
