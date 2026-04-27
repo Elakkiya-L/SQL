@@ -1,4 +1,6 @@
 📊 SQL Business Analytics – Portfolio
+
+
 🚀 Overview
 
 This repository contains SQL solutions focused on real-world business analytics problems.
@@ -9,15 +11,21 @@ Subqueries (correlated & non-correlated)
 Window functions (ROW_NUMBER, RANK, LAG)
 Conditional aggregation (CASE WHEN)
 Time-based analysis (year-level customer behavior)
+
+
 🎯 Key Business Problems Solved
 🔹 1. Customer Retention Analysis
 Identify customers who returned after their first purchase.
+
 🔹 2. Reactivation (Win-back Customers)
 Customers who stopped purchasing and later returned.
+
 🔹 3. Consecutive Purchase Pattern
 Identify customers with continuous yearly activity.
+
 🔹 4. Longest Purchase Streak (Loyalty Analysis)
 Measure customer engagement strength.
+
 🔹 5. Top Customers by Spending
 Using ranking functions
 
