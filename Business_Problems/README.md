@@ -1,5 +1,5 @@
-###  📊 SQL Business Analytics Portfolio
-### 🚀 Overview
+#  📊 SQL Business Analytics Portfolio
+## 🚀 Overview
 
 This project demonstrates real-world business analytics problem-solving using SQL.
 It focuses on translating business questions into structured SQL queries using:
@@ -51,7 +51,7 @@ HAVING
   ### 🔹 2. Churn Analysis
   Customers who stopped purchasing after 2024.
 
-```sql
+``` sql
 SELECT customer_id
 FROM orders
 GROUP BY customer_id
@@ -59,7 +59,8 @@ HAVING
     SUM(CASE WHEN YEAR(order_date)=2024 THEN 1 ELSE 0 END) > 0
     AND SUM(CASE WHEN YEAR(order_date)=2025 THEN 1 ELSE 0 END) = 0;
 ```
-    ### 🔹 3. Reactivation Analysis
+    
+### 🔹 3. Reactivation Analysis
 
 Customers who returned after inactivity.
 ```sql
