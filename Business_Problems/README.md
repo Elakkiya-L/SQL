@@ -11,3 +11,4 @@ Today’s focus:
 - EXISTS / NOT EXISTS
 - Window Functions (RANK, LAG, ROW_NUMBER)
 - Streak & Sequence Analysis
+- 
