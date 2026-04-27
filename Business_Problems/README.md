@@ -1,5 +1,5 @@
-📊 SQL Business Analytics Portfolio
-🚀 Overview
+###  📊 SQL Business Analytics Portfolio
+### 🚀 Overview
 
 This project demonstrates real-world business analytics problem-solving using SQL.
 It focuses on translating business questions into structured SQL queries using:
@@ -10,7 +10,7 @@ Window Functions (ROW_NUMBER, LAG, RANK)
 Conditional Aggregation (CASE WHEN)
 Time-based analysis (customer behavior over years)
 
-🎯 Business Objective
+### 🎯 Business Objective
 
 The goal is to analyze customer behavior and answer key business questions such as:
 
@@ -22,7 +22,8 @@ Who are the top-performing customers?
 
 
 
-🛠️ Dataset Description
+### 🛠️ Dataset Description
+
 🧾 Tables Used
 | Column      | Description         |
 | ----------- | ------------------- |
@@ -47,7 +48,7 @@ HAVING
     SUM(CASE WHEN YEAR(order_date)=2024 THEN 1 ELSE 0 END) > 0
     AND SUM(CASE WHEN YEAR(order_date)=2025 THEN 1 ELSE 0 END) > 0;
 ```
-  ###🔹 2. Churn Analysis
+  ### 🔹 2. Churn Analysis
   Customers who stopped purchasing after 2024.
 
 ```sql
@@ -58,7 +59,7 @@ HAVING
     SUM(CASE WHEN YEAR(order_date)=2024 THEN 1 ELSE 0 END) > 0
     AND SUM(CASE WHEN YEAR(order_date)=2025 THEN 1 ELSE 0 END) = 0;
 ```
-    ###🔹 3. Reactivation Analysis
+    ### 🔹 3. Reactivation Analysis
 
 Customers who returned after inactivity.
 ```sql
@@ -70,7 +71,7 @@ HAVING
     AND SUM(CASE WHEN YEAR(order_date)=2025 THEN 1 ELSE 0 END) = 0
     AND SUM(CASE WHEN YEAR(order_date)=2026 THEN 1 ELSE 0 END) > 0;
    ``` 
-###🔹 4. Consecutive Purchase Pattern
+### 🔹 4. Consecutive Purchase Pattern
 
 Detect continuous yearly engagement.
 
@@ -88,7 +89,7 @@ SELECT customer_id, COUNT(*) AS streak_length
 FROM grp
 GROUP BY customer_id, grp_key;
 ```
-###🔹 5. Longest Purchase Streak (Loyalty Score)
+### 🔹 5. Longest Purchase Streak (Loyalty Score)
 ```sql
 SELECT customer_id, MAX(streak_len) AS longest_streak
 FROM (
@@ -102,14 +103,15 @@ FROM (
 ) final
 GROUP BY customer_id;
 ```
-🧠 Key Concepts Applied
+### 🧠 Key Concepts Applied
 Customer lifecycle analysis
 Retention vs churn vs reactivation
 Cohort-style thinking
 Window functions (ROW_NUMBER, RANK)
 Conditional aggregation (CASE WHEN)
 Time-based analysis (year-level patterns)
-📈 Business Insights Derived
+
+### 📈 Business Insights Derived
 
 This analysis helps identify:
 
@@ -119,14 +121,14 @@ This analysis helps identify:
 📊 High engagement customers (long streaks)
 💰 Revenue-driving customers
 
-🚀 Skills Demonstrated
+### 🚀 Skills Demonstrated
 Advanced SQL querying
 Business problem interpretation
 Data storytelling using SQL
 Analytical thinking (not just syntax)
 Window function mastery
 
-🎯 Conclusion
+### 🎯 Conclusion
 
 This project demonstrates the ability to:
 
