@@ -1,20 +1,42 @@
-# 📊 SQL Business Analytics Portfolio
+📊 SQL Business Analytics Project
+🧾 Project Overview
 
-## 🚀 Overview
-This repository contains SQL solutions focused on real-world business analytics problems.  
-The goal is to translate business questions into SQL logic using joins, subqueries, window functions, and conditional aggregation.
+This project focuses on solving real-world customer behavior analytics problems using SQL.
+It simulates how data analysts answer business questions related to:
 
----
+Customer retention
+Churn & reactivation
+Purchase patterns
+Loyalty (streak analysis)
+Customer segmentation
 
-## 🎯 Business Problems Solved
+The goal is to translate business questions → SQL logic → actionable insights.
 
-### 1. Customer Retention Analysis
-Identify customers who purchased in 2024 and again in 2025.
+🎯 Business Objective
 
-```sql
-SELECT customer_id
-FROM orders
-GROUP BY customer_id
-HAVING 
-    SUM(CASE WHEN YEAR(order_date)=2024 THEN 1 ELSE 0 END) > 0
-    AND SUM(CASE WHEN YEAR(order_date)=2025 THEN 1 ELSE 0 END) > 0;
+Understand customer behavior over time to answer questions like:
+
+Who are our loyal customers?
+Who stopped purchasing (churned)?
+Who came back after inactivity?
+How consistent are customer purchases?
+Who are the top contributors to revenue?
+
+🛠️ Dataset Description
+🧾 Tables Used
+| Column      | Description         |
+| ----------- | ------------------- |
+| id          | Order ID            |
+| customer_id | Customer identifier |
+| order_date  | Date of purchase    |
+
+Customers 
+| Column | Description   |
+| ------ | ------------- |
+| id     | Customer ID   |
+| name   | Customer name |
+
+📊 Key Analysis Performed
+🔹 1. Customer Retention Analysis
+
+Customers who purchased in consecutive years.
