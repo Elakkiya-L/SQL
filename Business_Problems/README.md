@@ -1,26 +1,26 @@
-📊 SQL Business Analytics Project
-🧾 Project Overview
+📊 SQL Business Analytics Portfolio
+🚀 Overview
 
-This project focuses on solving real-world customer behavior analytics problems using SQL.
-It simulates how data analysts answer business questions related to:
+This project demonstrates real-world business analytics problem-solving using SQL.
+It focuses on translating business questions into structured SQL queries using:
 
-Customer retention
-Churn & reactivation
-Purchase patterns
-Loyalty (streak analysis)
-Customer segmentation
-
-The goal is to translate business questions → SQL logic → actionable insights.
+Joins (Inner, Self, Left)
+Subqueries (correlated & non-correlated)
+Window Functions (ROW_NUMBER, LAG, RANK)
+Conditional Aggregation (CASE WHEN)
+Time-based analysis (customer behavior over years)
 
 🎯 Business Objective
 
-Understand customer behavior over time to answer questions like:
+The goal is to analyze customer behavior and answer key business questions such as:
 
-Who are our loyal customers?
+Who are the loyal customers?
 Who stopped purchasing (churned)?
-Who came back after inactivity?
+Who returned after inactivity (reactivation)?
 How consistent are customer purchases?
-Who are the top contributors to revenue?
+Who are the top-performing customers?
+
+
 
 🛠️ Dataset Description
 🧾 Tables Used
@@ -38,28 +38,30 @@ Customers
 
 📊 Key Analysis Performed
 
-🔹 1. Customer Retention Analysis
+### 🔹 1. Customer Retention Analysis
+```sql
 SELECT customer_id
 FROM orders
 GROUP BY customer_id
 HAVING 
     SUM(CASE WHEN YEAR(order_date)=2024 THEN 1 ELSE 0 END) > 0
     AND SUM(CASE WHEN YEAR(order_date)=2025 THEN 1 ELSE 0 END) > 0;
+```
+  ###🔹 2. Churn Analysis
+  Customers who stopped purchasing after 2024.
 
-  🔹 2. Churn Analysis
-
-Customers who stopped purchasing after 2024.
+```sql
 SELECT customer_id
 FROM orders
 GROUP BY customer_id
 HAVING 
     SUM(CASE WHEN YEAR(order_date)=2024 THEN 1 ELSE 0 END) > 0
     AND SUM(CASE WHEN YEAR(order_date)=2025 THEN 1 ELSE 0 END) = 0;
-
-    🔹 3. Reactivation Analysis
+```
+    ###🔹 3. Reactivation Analysis
 
 Customers who returned after inactivity.
-
+```sql
 SELECT customer_id
 FROM orders
 GROUP BY customer_id
@@ -67,10 +69,12 @@ HAVING
     SUM(CASE WHEN YEAR(order_date)=2024 THEN 1 ELSE 0 END) > 0
     AND SUM(CASE WHEN YEAR(order_date)=2025 THEN 1 ELSE 0 END) = 0
     AND SUM(CASE WHEN YEAR(order_date)=2026 THEN 1 ELSE 0 END) > 0;
-    
-🔹 4. Consecutive Purchase Pattern
+   ``` 
+###🔹 4. Consecutive Purchase Pattern
 
 Detect continuous yearly engagement.
+
+```sql
 WITH yrs AS (
     SELECT DISTINCT customer_id, YEAR(order_date) AS yr
     FROM orders
@@ -83,9 +87,9 @@ grp AS (
 SELECT customer_id, COUNT(*) AS streak_length
 FROM grp
 GROUP BY customer_id, grp_key;
-
-🔹 5. Longest Purchase Streak (Loyalty Score)
-
+```
+###🔹 5. Longest Purchase Streak (Loyalty Score)
+```sql
 SELECT customer_id, MAX(streak_len) AS longest_streak
 FROM (
     SELECT customer_id, grp_key, COUNT(*) AS streak_len
@@ -97,7 +101,7 @@ FROM (
     GROUP BY customer_id, grp_key
 ) final
 GROUP BY customer_id;
-
+```
 🧠 Key Concepts Applied
 Customer lifecycle analysis
 Retention vs churn vs reactivation
