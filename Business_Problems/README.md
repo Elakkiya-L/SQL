@@ -27,6 +27,7 @@ Cohort Thinking (First purchase vs repeat behavior)
 Ranking & Segmentation
 Time-based pattern detection
 Window function mastery
+
 📌 Business Insights Covered
 
 This repository focuses on answering real analytics questions like:
@@ -36,10 +37,12 @@ Who stopped purchasing (churn)?
 Who came back after inactivity?
 Who are the top spenders?
 How long do customers stay active?
+
 🛠️ Tools & Skills
 SQL (Advanced Intermediate Level)
 Analytical thinking for business problems
 Data storytelling using queries
+
 📈 Learning Outcome
 
 This project demonstrates the ability to:
@@ -55,3 +58,4 @@ This is part of my journey toward becoming a Data Analyst, focusing on:
 Real-world SQL problem solving
 Business intelligence thinking
 Analytical query design
+
